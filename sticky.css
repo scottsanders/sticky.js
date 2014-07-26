@@ -1,0 +1,20 @@
+/* Disabled stickiness on mobile */
+.js-sticky {
+	position: fixed;
+	top: 0;
+}
+
+.js-stuck {
+	/* This feature requires the parent element to be position relative and have a height */	
+	position: absolute;
+	bottom: 0;
+}
+
+/* Disabled stickiness on mobile */
+@media (max-width: 767px) {
+
+	.js-sticky, .js-stuck {
+		position: static;
+	}
+
+}
