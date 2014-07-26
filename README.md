@@ -12,6 +12,12 @@ Include script *after* the jQuery library:
 <script src="/path/to/sticky.js"></script>
 ```
 
+Include the basic css stylesheet (or add it to your own):
+
+```html
+<script src="/path/to/sticky.css"></script>
+```
+
 ## Usage
 Any element in your HTML can become sticky through the use of the following data tag:
 ```html
@@ -28,9 +34,9 @@ The data attributes currently supported by the plugin are:
 :	The selector for the element that you want to scroll alongside.
 
 ### Options
-This plugin supports the following options:
+This plugin current doesn't support and options:
 ```javascript
-jQuery('a').share({});
+jQuery('a').sticky({});
 ```
 
 ## Authors
