@@ -15,6 +15,9 @@
                 
             $(window).scroll(function(){
                 
+                if($target.height() < $element.height())
+                    return;
+                
                 var stickyTop = $target.offset().top - ($target.outerHeight(true) - $target.height()),
                     stickyBottom = stickyTop + $target.height() - $element.height(),
                     windowTop = $(this).scrollTop();
